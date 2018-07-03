@@ -1,0 +1,25 @@
+.catalog__lead {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.catalog__list {
+  @include list-reset;
+}
+
+.catalog__item-decor {
+  background-color: #63d1bb;
+}
+
+.catalog__item-child {
+  background-color: #56c3b2;
+}
+
+.catalog__link {
+  @include link-reset;
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+}

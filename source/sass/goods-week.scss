@@ -1,0 +1,29 @@
+.goods-week__title {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.goods-week__info {
+  color: $color-turquoise;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.goods-week__paragraph {
+  line-height: $body-line-height + 6px;
+}
+
+.goods-week__characteristic {
+  line-height: $body-line-height - 4px;
+}
+
+.goods-week__price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.goods-week__button {
+  @include style-button;
+}

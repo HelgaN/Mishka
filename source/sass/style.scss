@@ -1,1 +1,42 @@
-body { background: blue; }
+@import "fonts.scss";
+@import "mixins.scss";
+@import "variables.scss";
+@import "main-navigation.scss";
+@import "catalog.scss";
+@import "goods-week.scss";
+@import "about-us.scss";
+@import "reviews.scss";
+@import "contacts.scss";
+@import "page-footer.scss";
+@import "copyright.scss";
+@import "product.scss";
+@import "manufacture.scss";
+@import "page-form.scss";
+@import "form.scss";
+
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}*/

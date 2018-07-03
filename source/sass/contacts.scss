@@ -1,0 +1,12 @@
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__wrapper {
+  line-height: 30px;
+}
+
+.contacts__button {
+  @include style-button;
+}

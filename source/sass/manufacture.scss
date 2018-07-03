@@ -1,0 +1,13 @@
+.manufacture__process-title {
+  font-weight: bold;
+}
+
+.manufacture__process-paragraph {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.manufacture__order {
+  @include link-reset;
+  @include style-button;
+}

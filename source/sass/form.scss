@@ -1,0 +1,23 @@
+.form__fieldset {
+  border: none;
+}
+
+.form__legend {
+  color: $color-turquoise;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.form__label {
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.form__required-info {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__button {
+  @include style-button;
+}

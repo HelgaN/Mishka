@@ -1,2 +1,230 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: bold; }
+
+.main-navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.main-navigation__link {
+  color: #000000;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold; }
+
+.catalog__lead {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold; }
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.catalog__item-decor {
+  background-color: #63d1bb; }
+
+.catalog__item-child {
+  background-color: #56c3b2; }
+
+.catalog__link {
+  color: #000000;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold; }
+
+.goods-week__title {
+  font-size: 25px;
+  line-height: 30px; }
+
+.goods-week__info {
+  color: #63d1bb;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.goods-week__paragraph {
+  line-height: 30px; }
+
+.goods-week__characteristic {
+  line-height: 20px; }
+
+.goods-week__price {
+  font-size: 20px;
+  font-weight: bold; }
+
+.goods-week__button {
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 2px solid #000000; }
+
+.about-us__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold; }
+
+.about-us__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold; }
+
+.reviews__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold; }
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.reviews__item-text {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 30px; }
+
+.reviews__author {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  font-style: normal; }
+
+.reviews__author-contact-link {
+  color: #000000;
+  text-decoration: none; }
+
+.reviews__button-whrite {
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 2px solid #000000; }
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px; }
+
+.contacts__wrapper {
+  line-height: 30px; }
+
+.contacts__button {
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 2px solid #000000; }
+
+.copyright__text {
+  font-size: 19px;
+  font-weight: bold; }
+
+.product__title {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold; }
+
+.product__link {
+  color: #000000;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 24px; }
+
+.product__description {
+  font-size: 13px;
+  line-height: 30px; }
+
+.product__price {
+  font-weight: bold; }
+
+.manufacture__process-title {
+  font-weight: bold; }
+
+.manufacture__process-paragraph {
+  font-size: 13px;
+  line-height: 24px; }
+
+.manufacture__order {
+  color: #000000;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 2px solid #000000; }
+
+.page-form__title {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold; }
+
+.page-form__paragraph {
+  font-size: 13px;
+  line-height: 24px; }
+
+.form__fieldset {
+  border: none; }
+
+.form__legend {
+  color: #63d1bb;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.form__label {
+  font-weight: bold;
+  line-height: 18px; }
+
+.form__required-info {
+  font-size: 14px;
+  line-height: 16px; }
+
+.form__button {
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 2px solid #000000; }
+
 body {
-  background: blue; }
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/*
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}*/

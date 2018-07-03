@@ -1,0 +1,29 @@
+.reviews__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.reviews__list {
+  @include list-reset;
+}
+
+.reviews__item-text {
+  @include list-reset;
+  line-height: $body-line-height + 6px;
+}
+
+.reviews__author {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.reviews__author-contact-link {
+  @include link-reset;
+}
+
+.reviews__button-whrite {
+  @include style-button;
+}
