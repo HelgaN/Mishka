@@ -1,6 +1,7 @@
 @import "fonts.scss";
 @import "mixins.scss";
 @import "variables.scss";
+@import "page-header.scss";
 @import "main-navigation.scss";
 @import "catalog.scss";
 @import "goods-week.scss";
@@ -29,7 +30,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-/*
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -39,4 +40,4 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}*/
+}

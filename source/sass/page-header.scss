@@ -1,0 +1,28 @@
+.page-header {
+  outline: 2px solid red;
+}
+
+.page-header__logo {
+  display: block;
+  width: 86px;
+  margin: 0 auto;
+  outline: 2px solid green;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+    min-height: 100px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  .page-header__logo {
+    position: absolute;
+  }
+
+}

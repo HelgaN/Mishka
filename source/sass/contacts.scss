@@ -1,12 +1,32 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__wrapper {
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
 .contacts__title {
   font-size: 18px;
   line-height: 30px;
 }
 
-.contacts__wrapper {
+.contacts__wrapper-inner {
   line-height: 30px;
+}
+
+.contacts__wrapper-button {
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 40px 30px;
 }
 
 .contacts__button {
   @include style-button;
+  width: 100%;
 }
