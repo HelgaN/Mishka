@@ -65,5 +65,40 @@
     outline: 2px solid green;
   }
 
+}
 
+@media (min-width: $desktop-width) {
+  .main-navigation {
+    width: $desktop-width;
+  }
+
+  .main-navigation__item--desktop {
+    display: block;
+  }
+
+  .main-navigation__list {
+    width: 1050px;
+  }
+
+  .main-navigation__item {
+    &-catalog {
+      order: 1;
+    }
+    &-order {
+      order: 2;
+    }
+    &-search {
+      order: 3;
+      padding-left: 334px;
+    }
+    &-cart {
+      order: 4;
+    }
+    &-new {
+      order: 5;
+    }
+    &-sale {
+      order: 6;
+    }
+  }
 }

@@ -26,3 +26,14 @@
   }
 
 }
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1150px;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    left: calc(50% - 75px);
+  }
+}

@@ -34,3 +34,43 @@
 .reviews__button-whrite {
   @include style-button;
 }
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .reviews__wrapper {
+    position: relative;
+    width: 768px;
+    padding: 0 50px;
+  }
+
+  .reviews__button-wrapper {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    outline: 2px solid red;
+  }
+
+  .reviews__button-whrite {
+    position: absolute;
+    top: 0;
+    right: 50px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+
+  .reviews__wrapper {
+    margin: 0;
+    margin-left: 175px;
+    padding: 0;
+  }
+}

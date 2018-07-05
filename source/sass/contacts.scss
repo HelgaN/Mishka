@@ -30,3 +30,45 @@
   @include style-button;
   width: 100%;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+    padding: 0 50px;
+  }
+
+  .contacts__title {
+    width: 668px;
+  }
+
+  .contacts__wrapper-inner {
+    width: 334px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: $desktop-width;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .contacts__wrapper {
+    width: 525px;
+    margin: 0;
+  }
+
+  .contacts__map {
+    width: 525px;
+  }
+
+  .contacts__wrapper-button {
+    margin: 0;
+    order: 3;
+  }
+
+}

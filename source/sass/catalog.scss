@@ -46,14 +46,45 @@
 
 @media (min-width: $tablet-width) {
   .catalog__lead {
-    width: 768px;
+    width: 668px;
     min-height: 570px;
-    padding: 130px;
+    padding: 80px;
     margin-top: -60px;
     font-size: 43px;
     line-height: 50px;
     background-size: cover;
+  }
 
+  .catalog__list {
+    width: 668px;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .catalog__item {
+    width: 50%;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: 100%;
+    padding: 0;
+  }
+
+  .catalog__lead {
+    width: $desktop-width;
+    min-height: 630px;
+    margin: 0 auto;
+    padding: 140px 200px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .catalog__list {
+    width: $desktop-width;
+    margin: 0 auto;
   }
 
 }

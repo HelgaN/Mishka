@@ -12,3 +12,23 @@
 .page-footer__logo {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    width: 768px;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+  .page-footer__logo {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: $desktop-width;
+    padding: 50px;
+
+  }
+}

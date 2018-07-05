@@ -34,3 +34,59 @@
 .goods-week__button {
   @include style-button;
 }
+
+@media (min-width: $tablet-width) {
+  .goods-week {
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+    padding: 0 50px;
+  }
+
+  .goods-week__wrapper-title {
+    display: flex;
+    width: 668px;
+    justify-content: space-between;
+  }
+
+  .goods-week__wrapper-block {
+    width: 334px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .goods-week {
+    width: $desktop-width;
+  }
+
+  .goods-week__wrapper-title {
+    width: $desktop-width;
+  }
+
+  .goods-week__title {
+    padding-right: 300px;
+    font-size: 53px;
+    line-height: 57px;
+    order: 2;
+
+  }
+
+  .goods-week__info {
+    width: 175px;
+    box-sizing: border-box;
+    padding: 40px;
+  }
+
+  .goods-week__wrapper-block {
+    width: 350px;
+    margin-left: 135px;
+  }
+
+  .goods-week__photo {
+    flex-grow: 2;
+  }
+
+
+
+}
