@@ -2,6 +2,17 @@
   border: none;
 }
 
+.form__wrapper {
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.form__list {
+  @include list-reset;
+}
+
 .form__legend {
   color: $color-turquoise;
   text-transform: uppercase;
@@ -20,4 +31,23 @@
 
 .form__button {
   @include style-button;
+}
+
+@media (min-width: $tablet-width) {
+  .form__wrapper {
+    display: flex;
+    width: $tablet-width;
+    padding: 50px;
+  }
+
+  .form__legend {
+    width: 167px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .form__label {
+    font-size: 19px;
+  }
+
 }

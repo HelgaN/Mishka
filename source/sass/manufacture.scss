@@ -1,3 +1,9 @@
+.manufacture {
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 30px;
+}
 .manufacture__process-title {
   font-weight: bold;
 }
@@ -10,4 +16,22 @@
 .manufacture__order {
   @include link-reset;
   @include style-button;
+}
+
+@media (min-width: $tablet-width) {
+  .manufacture {
+    width: $tablet-width;
+    padding: 0 50px;
+  }
+
+  .manufacture__video-picture {
+    width: 100%;
+  }
+
+  .manufacture__process {
+    width: 668px;
+    box-sizing: border-box;
+    padding: 30px;
+  }
+
 }

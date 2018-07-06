@@ -12,23 +12,27 @@
 <body>
   <header class="page-header">
 
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-desktop.svg" width="" height="" alt="Магазин «Мишка»">
+    <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="" height="" alt="Магазин «Мишка»">
       </a>
 
     <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button">Открыть меню</button>
+      <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list">
-          <li class="main-navigation__item"><a class="main-navigation__link" href="catalog.html">Каталог товаров</a></li>
-          <li class="main-navigation__item">
+          <li class="main-navigation__item main-navigation__item-catalog"><a class="main-navigation__link" href="catalog.html">Каталог товаров</a></li>
+          <li class="main-navigation__item main-navigation__item-order">
             <a class="main-navigation__link" href="form.html">Вязание на заказ</a>
           </li>
           <li class="main-navigation__item main-navigation__item-search">
-            <a class="main-navigation__link" href="#">Поиск по сайту</a>
+            <a class="main-navigation__link" href="#">
+              <svg width="17.6" height="17.6" viewBox="-0.8 -0.8 17.6 17.6"><path fill="currentcolor" d="M16.47 14.93l-3.415-3.415A7.67 7.67 0 0 0 14.6 6.899C14.6 2.646 11.153-.8 6.9-.8S-.8 2.646-.8 6.899s3.446 7.7 7.699 7.7c1.734 0 3.326-.58 4.613-1.546l3.417 3.416c.203.202.418.33.771.33a1.1 1.1 0 0 0 1.1-1.1c0-.24-.061-.499-.33-.769zM1.399 6.899a5.5 5.5 0 1 1 11 0c0 3.038-2.462 5.5-5.5 5.5s-5.5-2.461-5.5-5.5z"></path></svg>
+              Поиск по сайту</a>
           </li>
           <li class="main-navigation__item main-navigation__item-cart">
-            <a class="main-navigation__link" href="#">Корзина: пока пуста</a>
+            <a class="main-navigation__link" href="#">
+              <svg width="20.294" height="18.849" viewBox="264.205 370.961 20.294 18.849"><path fill="currentcolor" d="M283.75 378.19h-3.151l-3.407-6.814a.75.75 0 1 0-1.341.671l3.071 6.143h-9.138l3.072-6.143a.75.75 0 0 0-1.341-.671l-3.407 6.814h-3.151a.75.75 0 0 0 0 1.5h.157l.855 2.991a.737.737 0 0 0-.316.595c0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795a.745.745 0 0 0 .698-.739.738.738 0 0 0-.316-.596l.854-2.991h.157a.75.75 0 1 0-.002-1.499zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z"></path></svg>
+              Корзина: пока пуста</a>
           </li>
           <li class="main-navigation__item main-navigation__item--desktop">
             <a class="main-navigation__link" href="#">Новые поступления</a>
@@ -47,13 +51,16 @@
   <main class="page-inner">
 
     <section class="product">
-      <h2 class="product__title">Каталог товаров</h2>
+      <div class="product__wrapper-page-title">
+        <h2 class="product__page-title">Каталог товаров</h2>
+      </div>
 
-      <ul class-"product__list"="">
+      <ul class="product__list">
         <li class="product__item">
           <a class="product__link-image" href="#">
-            <img class="product__image" src="#" alt="Фото товара">
+            <img class="product__image" src="img/photo-hare-mobile@1x.jpg" alt="Фото товара">
           </a>
+          <div class="product__item-block">
             <div class="product__wrapper-title">
               <h3 class="product__title">
                 <a class="product__link" href="#">Зайчик-попрыгайчик</a>
@@ -64,11 +71,13 @@
               <p class="product__price">1 200 руб.</p>
               <a class="product__link-cart" href="#">Добавить в карзину</a>
             </div>
-        </li>
-        <li>
+            <div>
+        </div></div></li>
+        <li class="product__item">
           <a class="product__link-image" href="#">
-            <img class="product__image" src="#" alt="Фото товара">
+            <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" alt="Фото товара">
           </a>
+          <div class="product__item-block">
             <div class="product__wrapper-title">
               <h3 class="product__title">
                 <a class="product__link" href="">Корзинка для белья</a>
@@ -79,11 +88,13 @@
               <p class="product__price">690 руб.</p>
               <a class="product__link-cart" href="#">Добавить в карзину</a>
             </div>
+          </div>
         </li>
-        <li>
+        <li class="product__item">
           <a class="product__link-image" href="#">
-            <img class="product__image" src="#" alt="Фото товара">
+            <img class="product__image" src="img/photo-toys-mobile@1x.jpg" alt="Фото товара">
           </a>
+          <div class="product__item-block">
             <div class="product__wrapper-title">
               <h3 class="product__title">
                 <a class="product__link" href="">Большая корзинка для игрушек</a>
@@ -94,7 +105,8 @@
               <p class="product__price">1 500 руб.</p>
               <a class="product__link-cart" href="#">Добавить в карзину</a>
             </div>
-        </li>
+          </div></li>
+        
       </ul>
     </section>
 
@@ -102,7 +114,7 @@
       <h2 class="visually-hidden">Наше производство</h2>
 
       <div class="manufacture__video">
-        <img src="" alt="">
+        <img class="manufacture__video-picture" src="img/video-mobile@1x.jpg" alt="Процесс производства">
       </div>
 
       <div class="manufacture__process">
@@ -119,29 +131,29 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-    <a class="page-footer__logo" href="index.html">
+      <a class="page-footer__logo" href="index.html">
       <img class="page-footer__logo-image" src="img/logo-footer.svg" width="" height="" alt="Магазин «Мишка»">
     </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="#">Мы в Вконтакте</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Мы в Инстаграме</a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
-      <a class="copyright__link" href="#">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Мы в Инстаграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="#">
         <img src="img/logo-htmlacademy.svg" alt="Логотип HTML-Academy">
       </a>
+      </div>
     </div>
-  </div>
   </footer>
 
 </body>

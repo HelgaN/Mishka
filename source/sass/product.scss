@@ -1,7 +1,30 @@
-.product__title {
+.product__wrapper-page-title {
+  background-color: #f1f1f1;
+}
+
+.product__page-title {
+  display: block;
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 60px 30px;
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
+}
+
+.product__list {
+  width: 320px;
+  box-sizing: border-box;
+  padding: 0 30px;
+  @include list-reset;
+  margin: 0 auto;
+}
+
+.product__item {
+  width: 260px;
+  margin: 0 auto;
 }
 
 .product__link {
@@ -17,4 +40,17 @@
 
 .product__price {
   font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .product__list {
+    width: $tablet-width;
+    padding: 0 50px;
+  }
+
+  .product__item {
+    display: flex;
+    width: 668px;
+  }
+
 }
