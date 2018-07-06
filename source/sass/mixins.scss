@@ -10,8 +10,10 @@
 }
 
 @mixin style-button {
+  font-style: $font-family;
   font-size: 17px;
   line-height: 20px;
+  font-weight: bold;
   text-transform: uppercase;
   background-color: #ffffff;
   border: 2px solid #000000;
