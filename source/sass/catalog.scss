@@ -66,24 +66,56 @@
 
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    margin-top: -60px;
+    border-top: 1px solid #e7e7e7;
+  }
   .catalog__lead {
     width: 668px;
-    min-height: 570px;
-    padding: 80px;
-    margin-top: -60px;
+    min-height: 627px;
+    padding: 155px 60px;
     font-size: 43px;
     line-height: 50px;
     background-size: cover;
   }
 
   .catalog__list {
+    position: relative;
     width: 668px;
     display: flex;
     margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .catalog__list::before {
+    position: absolute;
+    content: "";
+    bottom: -7px;
+    width: 100%;
+    height: 16px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-size: cover;
   }
 
   .catalog__item {
     width: 50%;
+  }
+
+  .catalog__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .catalog__link {
+    svg {
+      top: 30px;
+      path {
+        fill: transparentize(#3c7168, 0.5);
+      }
+    }
+    &--decor svg {
+      right: calc(50% - 130px);
+    }
   }
 
 }

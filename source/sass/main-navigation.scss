@@ -1,66 +1,64 @@
-.main-navigation {
-  width: 100%;
-}
+@media (max-width: $mobile-width-only) {
+  .main-navigation {
+    width: 100%;
+  }
 
-.main-navigation__toggle {
-  position: absolute;
-  top: 30px;
-  right: calc(50% - 130px);
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-  border: none;
-}
+  .main-navigation__toggle {
+    position: absolute;
+    top: 30px;
+    right: calc(50% - 130px);
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+  }
 
-.main-navigation__toggle::before {
-  position: absolute;
-  content: "";
-  left: -5px;
-  top: 9px;
-  width: 30px;
-  height: 2px;
-  transform: rotate(45deg);
-  background-color: #000000;
-}
+  .main-navigation__toggle::before {
+    position: absolute;
+    content: "";
+    left: -5px;
+    top: 9px;
+    width: 30px;
+    height: 2px;
+    transform: rotate(45deg);
+    background-color: #000000;
+  }
 
-.main-navigation__toggle::after {
-  position: absolute;
-  content: "";
-  left: -5px;
-  top: 9px;
-  width: 30px;
-  height: 2px;
-  transform: rotate(-45deg);
-  background-color: #000000;
-}
+  .main-navigation__toggle::after {
+    position: absolute;
+    content: "";
+    left: -5px;
+    top: 9px;
+    width: 30px;
+    height: 2px;
+    transform: rotate(-45deg);
+    background-color: #000000;
+  }
 
-.main-navigation--closed .main-navigation__toggle {
-  background-image: linear-gradient(to bottom, #ffffff 3px, #000000 3px, #000000 5px, #ffffff 5px, #ffffff 9px, #000000 9px, #000000 11px, #ffffff 11px, #ffffff 15px, #000000 15px, #000000 17px, #ffffff 17px);
-}
+  .main-navigation--closed .main-navigation__toggle {
+    background-image: linear-gradient(to bottom, #ffffff 3px, #000000 3px, #000000 5px, #ffffff 5px, #ffffff 9px, #000000 9px, #000000 11px, #ffffff 11px, #ffffff 15px, #000000 15px, #000000 17px, #ffffff 17px);
+  }
 
-.main-navigation--closed .main-navigation__list {
-  display: none;
-}
+  .main-navigation--closed .main-navigation__list {
+    display: none;
+  }
 
-.main-navigation__toggle:hover {
-  opacity: 0.6;
-}
+  .main-navigation__toggle:hover {
+    opacity: 0.6;
+  }
 
-.main-navigation__toggle:active {
-  opacity: 0.3;
-}
+  .main-navigation__toggle:active {
+    opacity: 0.3;
+  }
 
-.main-navigation--closed .main-navigation__toggle::before,
-.main-navigation--closed .main-navigation__toggle:after {
-  display: none;
-}
+  .main-navigation--closed .main-navigation__toggle::before,
+  .main-navigation--closed .main-navigation__toggle:after {
+    display: none;
+  }
 
-.main-navigation__list {
-  @include list-reset;
-}
-
-.main-navigation__item {
-  border-bottom: 2px solid #ececec;
+  .main-navigation__item {
+    border-bottom: 2px solid #ececec;
+  }
 }
 
 .main-navigation__link {
@@ -79,6 +77,10 @@
 .main-navigation__delivery,
 .main-navigation__item--desktop {
   display: none;
+}
+
+.main-navigation__list {
+  @include list-reset;
 }
 
 .main-navigation__link svg {
@@ -116,28 +118,58 @@
   }
 
   .main-navigation__list {
-    outline: 3px solid purple;
     display: flex;
     flex-wrap: wrap;
     width: 668px;
-    min-height: 100px;
     box-sizing: border-box;
   }
 
   .main-navigation__item {
     &-catalog {
+      width: 167px;
       order: 3;
     }
     &-order {
+      width: 167px;
+      margin-right: 320px;
       order: 4;
     }
     &-search {
+      width: 80px;
       order: 1;
-      padding-left: 334px;
+      margin-left: 320px;
+      padding: 10px 0;
+      border-left: 1px solid #e7e7e7;
     }
     &-cart {
+      width: 265px;
+      box-sizing: border-box;
+      padding: 10px 0;
       order: 2;
+      border-left: 1px solid #e7e7e7;
     }
+  }
+
+  .main-navigation__link {
+    position: relative;
+    padding: 20px 20px 20px 0;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+  }
+
+  .main-navigation__link-cart {
+    padding-left: 85px;
+    font-size: 17px;
+  }
+
+  .main-navigation__link svg {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 33px;
+  }
+
+  .main-navigation__link-search {
+    visibility: hidden;
   }
 
   .main-navigation__delivery {
@@ -145,10 +177,9 @@
     position: absolute;
     width: 334px;
     right: 0;
-    bottom: 0;
+    bottom: 5px;
     margin-right: 50px;
     text-align: right;
-    outline: 2px solid green;
   }
 
 }

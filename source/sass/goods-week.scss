@@ -86,21 +86,77 @@
 }
 
 @media (min-width: $tablet-width) {
-  .goods-week {
+  .goods-week__wrapper {
     display: flex;
     flex-wrap: wrap;
     width: 768px;
+    box-sizing: border-box;
     padding: 0 50px;
+    margin: 0 auto;
   }
 
   .goods-week__wrapper-title {
     display: flex;
     width: 668px;
     justify-content: space-between;
+    padding: 0;
+  }
+
+  .goods-week__title {
+    padding: 0;
+    margin-bottom: 55px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .goods-week__info {
+    width: 85px;
+    text-align: center;
+    margin-right: 20px;
+    padding-top: 10px;
+    line-height: 17px;
   }
 
   .goods-week__wrapper-block {
-    width: 334px;
+    width: 290px;
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .goods-week__paragraph {
+    padding-top: 0;
+    margin-top: -7px;
+    margin-bottom: 15px;
+  }
+
+  .goods-week__characteristic {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .goods-week__wrapper-price {
+    width: 290px;
+    margin: 0;
+    margin-top: -45px;
+    padding: 0;
+  }
+
+  .goods-week__price {
+    margin-bottom: 35px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .goods-week__button {
+    margin-bottom: 50px;
+  }
+
+  .goods-week::before {
+    height: 15px;
+    background-size: contain;
+    background-repeat: repeat;
   }
 
 }

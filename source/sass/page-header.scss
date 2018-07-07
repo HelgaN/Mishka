@@ -1,7 +1,6 @@
 .page-header {
   width: 100%;
   margin: 0 auto;
-  /*outline: 2px solid red;*/
 }
 
 .page-header__logo {
@@ -36,6 +35,7 @@
 
   .page-header__logo {
     position: absolute;
+    border-bottom: none;
   }
 
 }
