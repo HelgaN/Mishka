@@ -1,4 +1,27 @@
+.copyright {
+  width: 260px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 38px;
+}
+
+.copyright__link {
+  @include link-reset;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .copyright__text {
+  margin-bottom: 10px;
   font-size: 19px;
   font-weight: bold;
+}
+
+.copyright__link:hover svg path {
+  fill: $color-turquoise;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
 }

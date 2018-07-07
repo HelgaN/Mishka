@@ -1,4 +1,28 @@
 .social__list {
   @include list-reset;
   display: flex;
+  justify-content: center;
+  align-items: baseline;
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+
+.social__item {
+  margin-right: 40px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link svg path {
+  fill: #000000;
+}
+
+.social__link:hover svg path {
+  fill: $color-turquoise;
+}
+
+.social__link:active svg path {
+  opacity: 0.3;
 }
