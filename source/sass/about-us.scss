@@ -15,6 +15,8 @@
 
 .about-us__list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 52px;
   font-size: 17px;
   line-height: 20px;
@@ -87,30 +89,42 @@
     padding: 0 50px;
   }
 
+  .about-us__title {
+    padding-top: 50px;
+    padding-bottom: 0;
+    font-size: 43px;
+    line-height: 52px;
+  }
+
   .about-us__list {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 70px;
   }
 
   .about-us__item {
     width: 334px;
     padding-right: 0;
-    &-eco {
+    margin-top: 100px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 22px;
+    &--eco {
       order: 1;
     }
-    &-style {
+    &--style {
       order: 3;
     }
-    &-likes {
+    &--likes {
       order: 5;
     }
-    &-hand {
+    &--hand {
       order: 2;
     }
-    &-maker {
+    &--maker {
       order: 4;
     }
-    &-pack {
+    &--pack {
       order: 6;
     }
 

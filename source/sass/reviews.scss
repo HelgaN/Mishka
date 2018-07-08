@@ -91,31 +91,59 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    width: $tablet-width;
-    box-sizing: border-box;
-    padding: 0 50px;
+    background-size: 46% 460px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
   }
 
   .reviews__wrapper {
     position: relative;
-    width: 768px;
-    padding: 0 50px;
+    width: $tablet-width;
+    box-sizing: border-box;
+    padding: 78px 50px 75px;
+  }
+
+  .reviews__title {
+    margin-bottom: 50px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .reviews__item-text {
+    margin-top: 50px;
+    margin-bottom: 57px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .reviews__author {
+    margin-bottom: 10px;
+    font-size: 18px;
   }
 
   .reviews__button-wrapper {
     position: absolute;
+    width: 170px;
     right: 50px;
-    bottom: 0;
-    outline: 2px solid red;
+    bottom: 93px;
+  }
+
+  .reviews__button {
+    border: none;
   }
 
   .reviews__button-whrite {
     position: absolute;
-    width: 170px;
-    top: 0;
+    width: 174px;
+    top: 80px;
     right: 50px;
+    padding: 14px;
+  }
+
+  .reviews::before {
+    height: 15px;
+    background-size: contain;
+    background-repeat: repeat;
   }
 
 }

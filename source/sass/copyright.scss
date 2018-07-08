@@ -25,3 +25,13 @@
 .copyright__link:active {
   opacity: 0.3;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 185px;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+    padding-top: 10px;
+  }
+}
