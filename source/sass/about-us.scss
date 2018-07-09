@@ -104,7 +104,8 @@
 
   .about-us__item {
     width: 334px;
-    padding-right: 0;
+    box-sizing: border-box;
+    padding-right: 30px;
     margin-top: 100px;
     margin-bottom: 12px;
     font-size: 20px;
@@ -136,5 +137,18 @@
   .about-us {
     width: $desktop-width;
     padding: 0 225px;
+  }
+
+  .about-us__title {
+    padding-top: 57px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__list {
+    margin-bottom: 80px;
+  }
+  .about-us__item {
+    margin-right: 15px;
   }
 }

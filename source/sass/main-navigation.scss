@@ -191,20 +191,30 @@
 
   .main-navigation__item--desktop {
     display: block;
+    .main-navigation__link {
+      font-size: 15px;
+      line-height: 24px;
+    }
   }
 
   .main-navigation__list {
-    width: 1050px;
+    width: 1150px;
+    align-items: center;
+    padding: 0 50px;
   }
 
   .main-navigation__item {
+    margin: 0;
     &-catalog {
+      margin-right: 50px;
       order: 1;
     }
     &-order {
+      margin-right: 300px;
       order: 2;
     }
     &-search {
+      margin-left: auto;
       order: 3;
     }
     &-cart {
@@ -214,7 +224,21 @@
       order: 5;
     }
     &-sale {
+      margin-right: auto;
       order: 6;
     }
+    &--desktop {
+      width: 215px;
+      z-index: 3;
+    }
+  }
+
+  .main-navigation__link {
+    font-size: 17px;
+  }
+
+  .main-navigation__delivery {
+    margin-left: 850px;
+    z-index: 3;
   }
 }

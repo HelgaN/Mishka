@@ -150,13 +150,51 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    width: $desktop-width;
-    margin: 0 auto;
+    background: none;
   }
 
   .reviews__wrapper {
+    width: 1050px;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 80px;
+    background-size: 46% 460px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .reviews__title {
+    width: 500px;
+    margin-left: 125px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reviews__list {
+    width: 875px;
+    box-sizing: border-box;
     margin: 0;
-    margin-left: 175px;
+    margin-left: 125px;
+    margin-bottom: 110px;
     padding: 0;
+    padding-right: 75px;
+  }
+
+  .reviews__button-whrite {
+    top: 78px;
+    right: 0;
+  }
+
+  .reviews__item-text {
+    margin-bottom: 35px;
+  }
+
+  .reviews__author {
+    font-size: 17px;
+  }
+
+  .reviews__button-wrapper {
+    top: 305px;
+    right: 0;
   }
 }
