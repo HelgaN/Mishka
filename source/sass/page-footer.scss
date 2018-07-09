@@ -10,6 +10,7 @@
 }
 
 .page-footer__logo {
+  @include link-reset;
   display: none;
 }
 
@@ -29,6 +30,9 @@
   .page-footer__wrapper {
     width: $desktop-width;
     padding: 50px;
+  }
 
+  .page-footer__logo {
+    margin-right: 350px;
   }
 }

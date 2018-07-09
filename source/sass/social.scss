@@ -41,3 +41,9 @@
   }
 
 }
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    margin-bottom: 0;
+  }
+}
