@@ -128,11 +128,13 @@
     &-catalog {
       width: 167px;
       order: 3;
+      z-index: 2;
     }
     &-order {
       width: 167px;
       margin-right: 320px;
       order: 4;
+      z-index: 2;
     }
     &-search {
       width: 80px;
@@ -180,6 +182,7 @@
     bottom: 5px;
     margin-right: 50px;
     text-align: right;
+    z-index: 3;
   }
 
 }
@@ -239,6 +242,5 @@
 
   .main-navigation__delivery {
     margin-left: 850px;
-    z-index: 3;
   }
 }

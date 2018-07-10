@@ -67,18 +67,42 @@
 
 @media (min-width: $tablet-width) {
   .manufacture {
-    width: $tablet-width;
-    padding: 0 50px;
+    width: 668px;
+    margin: 0 auto;
+    margin-bottom: 65px;
   }
 
   .manufacture__video-picture {
     width: 100%;
+    min-height: 453px;
   }
 
   .manufacture__process {
-    width: 668px;
-    box-sizing: border-box;
-    padding: 30px;
+    padding: 35px 40px 45px 40px;
+  }
+
+  .manufacture__process-title {
+    margin: 0;
+    margin-bottom: 30px;
+    padding-left: 65px;
+    font-size: 20px;
+    line-height: 24px;
+    &::before {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .manufacture__process-paragraph {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+
+  .manufacture__order {
+    display: block;
+    width: 553px;
+    text-align: center;
   }
 
 }
