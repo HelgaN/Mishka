@@ -129,12 +129,18 @@
       width: 167px;
       order: 3;
       z-index: 2;
+      .main-navigation__link {
+        width: 167px;
+      }
     }
     &-order {
       width: 167px;
       margin-right: 320px;
       order: 4;
       z-index: 2;
+      .main-navigation__link {
+        width: 167px;
+      }
     }
     &-search {
       width: 80px;
@@ -142,6 +148,10 @@
       margin-left: 320px;
       padding: 10px 0;
       border-left: 1px solid #e7e7e7;
+      .main-navigation__link {
+        width: 80px;
+        padding: 8px 0;
+      }
     }
     &-cart {
       width: 265px;
@@ -149,12 +159,15 @@
       padding: 10px 0;
       order: 2;
       border-left: 1px solid #e7e7e7;
+      .main-navigation__link {
+        width: 270px;
+      }
     }
   }
 
   .main-navigation__link {
     position: relative;
-    padding: 20px 20px 20px 0;
+    padding: 20px 0 20px 0;
     font-size: $body-font-size;
     line-height: $body-line-height;
   }
@@ -233,6 +246,10 @@
     &--desktop {
       width: 215px;
       z-index: 3;
+      .main-navigation__link {
+        width: 175px;
+        margin-left: 0;
+      }
     }
   }
 

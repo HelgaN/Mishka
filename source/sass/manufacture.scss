@@ -106,3 +106,39 @@
   }
 
 }
+
+@media (min-width: $desktop-width) {
+  .manufacture {
+    width: 1050px;
+    display: flex;
+  }
+
+  .manufacture__video {
+    width: 680px;
+  }
+
+  .manufacture__process {
+    width: 360px;
+    box-sizing: border-box;
+    padding-left: 80px;
+    padding-top: 96px;
+  }
+
+  .manufacture__process-title {
+    padding-left: 0;
+    padding-right: 80px;
+    &::before {
+      top: -50px;
+    }
+  }
+
+  .manufacture__process-paragraph {
+    margin-bottom: 47px;
+  }
+
+  .manufacture__order {
+    width: 230px;
+    box-sizing: border-box;
+  }
+
+}
