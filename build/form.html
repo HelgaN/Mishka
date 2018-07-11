@@ -72,7 +72,7 @@
       </fieldset>
 
       <fieldset class="form__fieldset">
-        <div class="form__wrapper">
+        <div class="form__wrapper form__wrapper-color">
           <p class="form__legend">Цвет</p>
           <ul class="form__list">
             <li class="form__item">
@@ -85,7 +85,7 @@
             </li>
             <li class="form__item">
               <input class="visually-hidden form__input form__input--checkbox" id="tiffany" type="checkbox" name="tiffany-color">
-              <label class="form__label form__label--checkbox" for="tiffany">"Тиффани"</label>
+              <label class="form__label form__label--checkbox" for="tiffany">«Тиффани»</label>
             </li>
             <li class="form__item">
               <input class="visually-hidden form__input form__input--checkbox" id="black" type="checkbox" name="black-color">
@@ -126,7 +126,7 @@
       </fieldset>
 
       <fieldset class="form__fieldset form__fieldset--contacts">
-        <div class="form__wrapper">
+        <div class="form__wrapper form__wrapper-contacts">
           <p class="visually-hidden">Контактная информация</p>
           <p>
             <label class="form__label" for="phone">Тел</label>
@@ -188,6 +188,16 @@
     </div>
   </div>
   </footer>
+
+  <script>
+  var nav = document.querySelector(".main-navigation");
+  nav.classList.add("main-navigation--closed");
+  var toggle = document.querySelector(".main-navigation__toggle");
+  toggle.addEventListener("click", function() {
+    nav.classList.toggle("main-navigation--closed");
+  })
+
+  </script>
 
 </body>
 
