@@ -136,6 +136,10 @@
     line-height: 20px;
   }
 
+  .goods-week__photo {
+    width: 333px;
+  }
+
   .goods-week__wrapper-price {
     width: 290px;
     margin: 0;
@@ -181,7 +185,7 @@
     font-size: 53px;
     line-height: 57px;
     order: 2;
-
+    z-index: 2;
   }
 
   .goods-week__info {
@@ -210,7 +214,6 @@
     width: 525px;
     height: 640px;
     margin-top: -165px;
-    z-index: -1;
   }
 
   .goods-week__wrapper-price {

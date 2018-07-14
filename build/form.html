@@ -12,9 +12,13 @@
 <body>
   <header class="page-header">
 
-    <a class="page-header__logo" href="index.html">
+    <a class="page-header__logo">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Магазин «Мишка»">
-      </a>
+      </picture>
+    </a>
   <!-- main-navigation--closed  -->
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>

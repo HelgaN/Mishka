@@ -279,7 +279,7 @@
 
 .catalog__lead {
   display: block;
-  width: 320px;
+  width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-height: 283px;
@@ -291,7 +291,11 @@
   text-align: center;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center top; }
+  background-position: center; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .catalog__lead {
+      background-image: url("../img/hero-mobile@2x.jpg");
+      background-size: 575px auto; } }
 
 .catalog__list {
   margin: 0;
@@ -346,7 +350,13 @@
     padding: 155px 60px;
     font-size: 43px;
     line-height: 50px;
-    background-size: cover; }
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-size: cover; } }
+  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+    .catalog__lead {
+      background-image: url("../img/hero-tablet@2x.jpg"); } }
+
+@media (min-width: 768px) {
   .catalog__list {
     position: relative;
     width: 668px;
@@ -390,7 +400,13 @@
     margin: 0 auto;
     padding: 152px 200px;
     font-size: 53px;
-    line-height: 57px; }
+    line-height: 57px;
+    background-image: url("../img/hero-desktop@1x.jpg"); } }
+  @media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1150px) and (min-resolution: 144dpi), (min-width: 1150px) and (min-resolution: 1.5dppx) {
+    .catalog__lead {
+      background-image: url("../img/hero-desktop@2x.jpg"); } }
+
+@media (min-width: 1150px) {
   .catalog__list {
     width: 1150px;
     -webkit-box-sizing: border-box;
@@ -537,6 +553,8 @@
   .goods-week__characteristic {
     font-size: 15px;
     line-height: 20px; }
+  .goods-week__photo {
+    width: 333px; }
   .goods-week__wrapper-price {
     width: 290px;
     margin: 0;
@@ -571,7 +589,8 @@
     line-height: 57px;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
-            order: 2; }
+            order: 2;
+    z-index: 2; }
   .goods-week__info {
     width: 175px;
     -webkit-box-sizing: border-box;
@@ -591,8 +610,7 @@
   .goods-week__photo {
     width: 525px;
     height: 640px;
-    margin-top: -165px;
-    z-index: -1; }
+    margin-top: -165px; }
   .goods-week__wrapper-price {
     margin-left: 175px;
     margin-top: -140px;
@@ -844,7 +862,12 @@
   .reviews {
     background-size: 46% 460px;
     background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat; } }
+  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+    .reviews {
+      background-image: url("../img/review@2x.jpg"); } }
+
+@media (min-width: 768px) {
   .reviews__wrapper {
     position: relative;
     width: 768px;
@@ -891,7 +914,12 @@
     padding-bottom: 80px;
     background-size: 46% 460px;
     background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat; } }
+  @media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1150px) and (min-resolution: 144dpi), (min-width: 1150px) and (min-resolution: 1.5dppx) {
+    .reviews__wrapper {
+      background-image: url("../img/review@2x.jpg"); } }
+
+@media (min-width: 1150px) {
   .reviews__title {
     width: 500px;
     margin-left: 125px;
