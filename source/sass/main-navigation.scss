@@ -11,6 +11,17 @@
     height: 20px;
     background-color: transparent;
     border: none;
+    overflow: visible;    // Animation IE
+  }
+
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+      opacity: 1;
+    }
   }
 
   .main-navigation__toggle::before {
@@ -22,6 +33,8 @@
     height: 2px;
     transform: rotate(45deg);
     background-color: #000000;
+    animation-name: zoomIn;
+    animation-duration: 0.7s;
   }
 
   .main-navigation__toggle::after {
@@ -33,10 +46,14 @@
     height: 2px;
     transform: rotate(-45deg);
     background-color: #000000;
+    animation-name: zoomIn;
+    animation-duration: 0.7s;
   }
 
   .main-navigation--closed .main-navigation__toggle {
     background-image: linear-gradient(to bottom, #ffffff 3px, #000000 3px, #000000 5px, #ffffff 5px, #ffffff 9px, #000000 9px, #000000 11px, #ffffff 11px, #ffffff 15px, #000000 15px, #000000 17px, #ffffff 17px);
+    animation-name: zoomIn;
+    animation-duration: 0.7s;
   }
 
   .main-navigation--closed .main-navigation__list {
@@ -79,8 +96,19 @@
   display: none;
 }
 
+@keyframes navigationShow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .main-navigation__list {
   @include list-reset;
+  animation-name: navigationShow;
+  animation-duration: 1.3s;
 }
 
 .main-navigation__link svg {

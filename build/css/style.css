@@ -65,7 +65,22 @@
     width: 20px;
     height: 20px;
     background-color: transparent;
-    border: none; }
+    border: none;
+    overflow: visible; }
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+              transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+              transform: scale3d(0.3, 0.3, 0.3); }
+    50% {
+      opacity: 1; } }
   .main-navigation__toggle::before {
     position: absolute;
     content: "";
@@ -75,7 +90,11 @@
     height: 2px;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
-    background-color: #000000; }
+    background-color: #000000;
+    -webkit-animation-name: zoomIn;
+            animation-name: zoomIn;
+    -webkit-animation-duration: 0.7s;
+            animation-duration: 0.7s; }
   .main-navigation__toggle::after {
     position: absolute;
     content: "";
@@ -85,9 +104,17 @@
     height: 2px;
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    background-color: #000000; }
+    background-color: #000000;
+    -webkit-animation-name: zoomIn;
+            animation-name: zoomIn;
+    -webkit-animation-duration: 0.7s;
+            animation-duration: 0.7s; }
   .main-navigation--closed .main-navigation__toggle {
-    background-image: linear-gradient(to bottom, #ffffff 3px, #000000 3px, #000000 5px, #ffffff 5px, #ffffff 9px, #000000 9px, #000000 11px, #ffffff 11px, #ffffff 15px, #000000 15px, #000000 17px, #ffffff 17px); }
+    background-image: linear-gradient(to bottom, #ffffff 3px, #000000 3px, #000000 5px, #ffffff 5px, #ffffff 9px, #000000 9px, #000000 11px, #ffffff 11px, #ffffff 15px, #000000 15px, #000000 17px, #ffffff 17px);
+    -webkit-animation-name: zoomIn;
+            animation-name: zoomIn;
+    -webkit-animation-duration: 0.7s;
+            animation-duration: 0.7s; }
   .main-navigation--closed .main-navigation__list {
     display: none; }
   .main-navigation__toggle:hover {
@@ -118,10 +145,26 @@
 .main-navigation__item--desktop {
   display: none; }
 
+@-webkit-keyframes navigationShow {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes navigationShow {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .main-navigation__list {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  -webkit-animation-name: navigationShow;
+          animation-name: navigationShow;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s; }
 
 .main-navigation__link svg {
   position: absolute;
