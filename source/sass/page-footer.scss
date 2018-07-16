@@ -12,6 +12,12 @@
 .page-footer__logo {
   @include link-reset;
   display: none;
+  &[href]:hover svg path {
+    fill: $color-dark-turqoise;
+  }
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -27,11 +27,96 @@
 }
 
 .catalog__item--decor {
-  background-color: #63d1bb;
+  background-color: $color-turquoise;
 }
 
 .catalog__item--child {
-  background-color: #56c3b2;
+  background-color: $color-dark-turqoise;
+}
+
+.catalog__item--decor:hover {
+  position: relative;
+  box-shadow: 0 -14px 28px rgba(0,0,0,0.25), 0 -10px 10px rgba(0,0,0,0.22), 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: -100%;
+    width: 300%;
+    height: 5px;
+    background-color: $color-turquoise;
+    transition: all linear 0.1s;
+    z-index: 5;
+  }
+  .catalog__link {
+    transition: all linear 0.1s;
+    padding-top: 22.5px;
+    margin-bottom: 5px;
+    svg {
+      transition: all linear 0.1s;
+      top: 15px;
+      path {
+        fill: #29a592;
+      }
+    }
+  }
+}
+
+.catalog__item--child:hover {
+  position: relative;
+  box-shadow: 0 -14px 28px rgba(0,0,0,0.25), 0 -10px 10px rgba(0,0,0,0.22), 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: -100%;
+    width: 300%;
+    height: 5px;
+    background-color: $color-dark-turqoise;
+    transition: all linear 0.1s;
+    z-index: 5;
+  }
+  .catalog__link {
+    padding-top: 22.5px;
+    margin-bottom: 5px;
+    transition: all linear 0.1s;
+    svg {
+      top: 15px;
+      transition: all linear 0.1s;
+      path {
+        fill: #239f8e;
+      }
+    }
+  }
+}
+
+.catalog__item:active {
+  .catalog__link {
+    opacity: 0.5;
+  }
+}
+
+.catalog__item--child:hover {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: -100%;
+    width: 300%;
+    height: 5px;
+    background-color: $color-dark-turqoise;
+  }
+  .catalog__link {
+    padding-top: 22.5px;
+    margin-bottom: 5px;
+    svg {
+      top: 15px;
+      path {
+        fill: #239f8e;
+      }
+    }
+  }
 }
 
 .catalog__link {
@@ -53,18 +138,18 @@
   svg {
     position: absolute;
     top: 22px;
-    path {
-      fill: transparentize(#ffffff, 0.5);
-    }
   }
   &--decor svg {
     right: calc(50% - 123px);
+    path {
+      fill: #3bb09d;
+    }
   }
   &--child svg {
     right: calc(50% - 133px);
-  }
-  &:hover {
-    outline: 2px solid red;
+    path {
+      fill: #35a999;
+    }
   }
 }
 
@@ -109,9 +194,18 @@
 
   .catalog__item {
     width: 50%;
+    &:hover::before {
+      width: 100%;
+      top: -5px;
+      left: 0;
+    }
+    &:hover {
+      box-shadow: 0 -14px 28px rgba(0,0,0,0.25), 0 -10px 10px rgba(0,0,0,0.22);
+    }
   }
 
   .catalog__link {
+    width: 100%;
     font-size: 20px;
     line-height: 30px;
   }
@@ -166,6 +260,7 @@
   .catalog__link {
     margin: 0;
     padding-left: 35px;
+    padding-right: 350px;
   }
 
   .catalog__link svg {
