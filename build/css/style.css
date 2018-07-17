@@ -17,16 +17,16 @@
 .page-header__logo {
   display: block;
   border-bottom: 2px solid #ececec; }
+  .page-header__logo[href]:hover {
+    opacity: 0.6; }
+  .page-header__logo[href]:active {
+    opacity: 0.3; }
 
 .page-header__logo-image {
   display: block;
   width: 86px;
   margin: 0 auto;
   padding: 21px; }
-  .page-header__logo-image:hover {
-    opacity: 0.6; }
-  .page-header__logo-image:active {
-    opacity: 0.3; }
 
 @media (min-width: 768px) {
   .page-header {
@@ -44,7 +44,10 @@
     padding: 0 50px; }
   .page-header__logo {
     position: absolute;
-    border-bottom: none; } }
+    border-bottom: none; }
+  .page-header__logo-image {
+    width: 113px;
+    padding-left: 0; } }
 
 @media (min-width: 1150px) {
   .page-header {
@@ -53,7 +56,10 @@
     z-index: 5; }
   .page-header__logo {
     position: absolute;
-    left: calc(50% - 75px); } }
+    left: calc(50% - 75px); }
+  .page-header__logo-image {
+    width: 149px;
+    padding-top: 10px; } }
 
 @media (max-width: 767px) {
   .main-navigation {
@@ -334,7 +340,7 @@
   text-align: center;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center -20px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .catalog__lead {
       background-image: url("../img/hero-mobile@2x.jpg");
@@ -468,7 +474,7 @@
     font-size: 43px;
     line-height: 50px;
     background-image: url("../img/hero-tablet@1x.jpg");
-    background-size: cover; } }
+    background-position: center top; } }
   @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
     .catalog__lead {
       background-image: url("../img/hero-tablet@2x.jpg"); } }
@@ -669,6 +675,7 @@
   .goods-week__wrapper-block {
     width: 290px;
     margin: 0;
+    margin-right: 45px;
     padding: 0;
     font-size: 17px;
     line-height: 30px; }
@@ -684,7 +691,7 @@
   .goods-week__wrapper-price {
     width: 290px;
     margin: 0;
-    margin-top: -45px;
+    margin-top: -135px;
     padding: 0; }
   .goods-week__price {
     margin-bottom: 35px;
@@ -728,6 +735,7 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin-left: 175px;
+    margin-right: 0;
     padding-right: 60px; }
   .goods-week__paragraph {
     margin-bottom: 30px; }
@@ -1471,11 +1479,10 @@
     display: -ms-flexbox;
     display: flex;
     width: 668px;
-    min-height: 331px;
-    margin-bottom: 55px; }
+    margin-bottom: 53px; }
   .product__image {
     width: 334px;
-    height: 100%; }
+    margin-bottom: -7px; }
   .product__item-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1497,15 +1504,21 @@
     font-size: 15px;
     line-height: 30px; }
   .product__wrapper-price {
-    margin-top: auto; }
+    position: relative;
+    margin-top: auto;
+    border-top: 1px solid #ececec; }
   .product__price {
     font-size: 17px;
     line-height: 24px;
     padding-bottom: 25px; }
   .product__link-cart {
-    margin-left: 170px; } }
+    position: absolute;
+    right: 5px; } }
 
 @media (min-width: 1150px) {
+  .product__wrapper-page-title::before {
+    background-size: 1150px;
+    background-repeat: repeat; }
   .product__page-title {
     padding-bottom: 100px;
     font-size: 53px;
@@ -1528,7 +1541,8 @@
             flex-direction: column;
     margin: 0; }
   .product__image {
-    min-height: 462px; }
+    min-height: 462px;
+    margin-bottom: 0; }
   .product__wrapper-title {
     min-height: 110px;
     padding-bottom: 10px; }
@@ -1637,7 +1651,8 @@
     width: 1050px;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    margin-bottom: 95px; }
   .manufacture__video {
     width: 680px; }
   .manufacture__process {
@@ -1715,6 +1730,9 @@
     padding-right: calc(50% - 350px);
     font-size: 53px;
     line-height: 57px; }
+    .page-form__title::before {
+      background-size: 1150px;
+      background-repeat: repeat; }
   .page-form__paragraph {
     width: 1050px;
     padding: 125px 175px 50px; } }
@@ -1764,6 +1782,10 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 18px; }
+  .form__label:hover::before {
+    border: 2px solid #63d1bb; }
+  .form__label:active::before {
+    border: 2px solid #c7c7c7; }
 
 .form__label--radio {
   position: relative;
@@ -1830,6 +1852,9 @@
   line-height: 45px;
   border: none;
   border-bottom: 2px solid #000000; }
+  .form__wrapper-name .form__input:focus, .form__wrapper-name .form__input:hover {
+    outline: none;
+    border-color: #63d1bb; }
 
 ::-webkit-input-placeholder {
   opacity: 0.3; }
@@ -1865,6 +1890,7 @@
     z-index: -1; }
 
 .form__wrapper-contacts p {
+  position: relative;
   margin: 0; }
 
 .form__wrapper-contacts .form__input {
@@ -1874,6 +1900,17 @@
   line-height: 45px;
   border: none;
   border-bottom: 2px solid #000000; }
+  .form__wrapper-contacts .form__input:hover, .form__wrapper-contacts .form__input:focus {
+    outline: none;
+    border-color: #63d1bb; }
+    .form__wrapper-contacts .form__input:hover + .form__input--icon path, .form__wrapper-contacts .form__input:focus + .form__input--icon path {
+      fill: #63d1bb; }
+  .form__wrapper-contacts .form__input--icon {
+    position: absolute;
+    top: 35px;
+    right: 0; }
+    .form__wrapper-contacts .form__input--icon path {
+      fill: #cccccc; }
 
 .form__textarea {
   width: 100%;
@@ -1884,7 +1921,11 @@
   padding: 15px;
   border: 2px solid #000000;
   font-size: 17px;
-  line-height: 18px; }
+  line-height: 18px;
+  resize: none; }
+  .form__textarea:hover, .form__textarea:focus {
+    outline: none;
+    border-color: #63d1bb; }
 
 textarea:-moz-placeholder {
   font-family: "Open Sans", "Arial", sans-serif; }
@@ -2015,6 +2056,8 @@ textarea::-webkit-input-placeholder {
       padding-left: 20px;
       font-size: 19px;
       background-color: #f1f1f1; }
+      .form__wrapper-contacts .form__input--icon {
+        top: 0; }
   .form__wrapper-textarea {
     padding: 50px 50px 20px; }
     .form__wrapper-textarea .form__legend {
@@ -2052,6 +2095,8 @@ textarea::-webkit-input-placeholder {
     text-align: center; }
   .form__list {
     width: 875px; }
+  .form__input--checkbox:checked + .form__label--checkbox::after {
+    top: -5px; }
   .form__wrapper-color {
     margin-bottom: 0; }
     .form__wrapper-color .form__legend {
@@ -2074,6 +2119,8 @@ textarea::-webkit-input-placeholder {
     .form__wrapper-contacts .form__label {
       margin-right: 0;
       padding-right: 0; }
+    .form__wrapper-contacts .form__input--icon {
+      right: 180px; }
   .form__wrapper-textarea .form__legend {
     margin-right: 7px; }
   .form__wrapper-textarea .form__textarea {

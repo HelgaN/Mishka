@@ -45,6 +45,12 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
+  &:hover::before {
+    border: 2px solid $color-turquoise;
+  }
+  &:active::before {
+    border: 2px solid #c7c7c7;
+  }
 }
 
 .form__label--radio {
@@ -119,6 +125,11 @@
     line-height: 45px;
     border: none;
     border-bottom: 2px solid #000000;
+    &:focus,
+    &:hover {
+      outline: none;
+      border-color: $color-turquoise;
+    }
   }
 }
 
@@ -159,6 +170,7 @@
     }
   }
   p {
+    position: relative;
     margin: 0;
   }
   .form__input {
@@ -168,6 +180,22 @@
     line-height: 45px;
     border: none;
     border-bottom: 2px solid #000000;
+    &:hover,
+    &:focus {
+      outline: none;
+      border-color: $color-turquoise;
+      & + .form__input--icon path {
+        fill: $color-turquoise;
+      }
+    }
+    &--icon {
+      position: absolute;
+      top: 35px;
+      right: 0;
+      path {
+        fill: #cccccc;
+      }
+    }
   }
 }
 
@@ -180,6 +208,12 @@
   border: 2px solid #000000;
   font-size: 17px;
   line-height: 18px;
+  resize: none;
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: $color-turquoise;
+  }
 }
 
 textarea:-moz-placeholder {
@@ -319,6 +353,9 @@ textarea::-webkit-input-placeholder {
       padding-left: 20px;
       font-size: 19px;
       background-color: #f1f1f1;
+      &--icon {
+        top: 0;
+      }
     }
   }
 
@@ -375,6 +412,10 @@ textarea::-webkit-input-placeholder {
     width: 875px;
   }
 
+  .form__input--checkbox:checked + .form__label--checkbox::after {
+    top: -5px;
+  }
+
   .form__wrapper-color {
     margin-bottom: 0;
     .form__legend {
@@ -407,6 +448,9 @@ textarea::-webkit-input-placeholder {
     .form__label {
       margin-right: 0;
       padding-right: 0;
+    }
+    .form__input--icon {
+      right: 180px;
     }
   }
 

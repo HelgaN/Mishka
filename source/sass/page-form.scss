@@ -64,6 +64,10 @@
     padding-right: calc(50% - 350px);
     font-size: 53px;
     line-height: 57px;
+    &::before {
+      background-size: 1150px;
+      background-repeat: repeat;
+    }
   }
 
   .page-form__paragraph {

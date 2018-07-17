@@ -6,6 +6,12 @@
 .page-header__logo {
   display: block;
   border-bottom: 2px solid #ececec;
+  &[href]:hover {
+    opacity: 0.6;
+  }
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__logo-image {
@@ -13,12 +19,7 @@
   width: 86px;
   margin: 0 auto;
   padding: 21px;
-  &:hover {
-    opacity: 0.6;
-  }
-  &:active {
-    opacity: 0.3;
-  }
+
 }
 
 @media (min-width: $tablet-width) {
@@ -38,6 +39,11 @@
     border-bottom: none;
   }
 
+  .page-header__logo-image {
+    width: 113px;
+    padding-left: 0;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
@@ -50,5 +56,10 @@
   .page-header__logo {
     position: absolute;
     left: calc(50% - 75px);
+  }
+
+  .page-header__logo-image {
+    width: 149px;
+    padding-top: 10px;
   }
 }
