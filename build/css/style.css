@@ -2130,6 +2130,113 @@ textarea::-webkit-input-placeholder {
     width: 1050px;
     padding: 30px 175px 5px; } }
 
+.modal {
+  width: 100%;
+  position: absolute;
+  top: 1045px;
+  left: center;
+  border-top: 1px solid #c7c7c7;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  z-index: 5; }
+
+.modal__wrapper {
+  width: 260px;
+  margin: 0 auto;
+  padding: 30px 0 45px; }
+
+.modal__title {
+  display: inline-block;
+  padding: 0 55px;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center; }
+
+.modal__form-legend {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 30px; }
+
+.modal__form-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px; }
+
+.modal__form-label {
+  display: block;
+  width: 82px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 16px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid #ececec; }
+  .modal__form-label:hover {
+    border: 1px solid #c7c7c7; }
+
+.modal__form-input:checked + .modal__form-label {
+  border: 1px solid #63d1bb; }
+
+.modal__form-button {
+  width: 100%;
+  padding: 17px;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  background-color: #63d1bb; }
+  .modal__form-button:hover {
+    font-size: 18px;
+    padding: 16px;
+    outline: 3px solid #63d1bb; }
+  .modal__form-button:active {
+    opacity: 0.5; }
+
+@media (min-width: 768px) {
+  .modal {
+    width: 566px;
+    left: calc(50% - 283px); }
+  .modal__wrapper {
+    width: 355px; }
+  .modal__title {
+    padding: 0;
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 57px; }
+  .modal__form-legend {
+    font-size: 17px; }
+  .modal__form-label {
+    width: 108px; }
+  .modal__form-button {
+    padding: 16px; } }
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  background-color: #ffffff;
+  z-index: 4; }
+
 body {
   min-width: 320px;
   min-height: 100vh;

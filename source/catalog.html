@@ -191,6 +191,32 @@
   </div>
   </footer>
 
+  <div class="overlay"></div>
+
+  <section class="modal">
+    <div class="modal__wrapper">
+      <h2 class="modal__title">Добавить  в корзину</h2>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+        <legend class="modal__form-legend">Выберите размер:</legend>
+          <ul class="modal__form-list">
+            <li class="modal__form-item">
+              <input class="visually-hidden modal__form-input" id="s_size" type="radio" name="size" value="s" checked>
+              <label class="modal__form-label" for="s_size">s</label>
+            </li>
+            <li class="modal__form-item">
+              <input class="visually-hidden modal__form-input" id="m_size" type="radio" name="size" value="m">
+              <label class="modal__form-label" for="m_size">m</label>
+            </li>
+            <li class="modal__form-item">
+              <input class="visually-hidden modal__form-input" id="l_size" type="radio" name="size" value="l">
+              <label class="modal__form-label" for="l_size">l</label>
+            </li>
+          </ul>
+          <button class="modal__form-button" type="submit">Добавить</button>
+        </form>
+    </div>
+  </section>
+
   <script src="http://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
 
   <script>

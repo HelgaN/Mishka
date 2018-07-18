@@ -1,0 +1,110 @@
+.modal {
+  width: 100%;
+  position: absolute;
+  top: 1045px;
+  left: center;
+  border-top: 1px solid #c7c7c7;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
+  z-index: 5;
+}
+
+.modal__wrapper {
+  width: 260px;
+  margin: 0 auto;
+  padding: 30px 0 45px;
+}
+
+.modal__title {
+  display: inline-block;
+  padding: 0 55px;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal__form-legend {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.modal__form-list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.modal__form-label {
+  display: block;
+  width: 82px;
+  box-sizing: border-box;
+  padding: 16px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid #ececec;
+  &:hover {
+    border: 1px solid #c7c7c7;
+  }
+}
+
+.modal__form-input:checked + .modal__form-label {
+  border: 1px solid $color-turquoise;
+}
+
+.modal__form-button {
+  width: 100%;
+  padding: 17px;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  background-color: $color-turquoise;
+  &:hover {
+    font-size: 18px;
+    padding: 16px;
+    outline: 3px solid $color-turquoise;
+  }
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 566px;
+    left: calc(50% - 283px);
+  }
+
+  .modal__wrapper {
+    width: 355px;
+  }
+
+  .modal__title {
+    padding: 0;
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal__form-legend {
+    font-size: 17px;
+  }
+
+  .modal__form-label {
+    width: 108px;
+  }
+
+  .modal__form-button {
+    padding: 16px;
+  }
+}

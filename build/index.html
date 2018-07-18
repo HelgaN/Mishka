@@ -187,7 +187,8 @@
         </div>
       </div>
 
-      <img class="contacts__map" src="img/map-mobile@1x.jpg" alt="Карта проезда">
+      <!--<img class="contacts__map" src="img/map-mobile@1x.jpg" alt="Карта проезда">-->
+      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123647!2d30.320894615623924!3d59.938796869048474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1524398075909" height="" style="border:0"></iframe>
       <div class="contacts__wrapper-button">
         <button class="contacts__button" type="button">Напишите нам</button>
       </div>
@@ -228,6 +229,31 @@
     </div>
   </div>
   </footer>
+  <div class="overlay"></div>
+
+  <section class="modal">
+    <div class="modal__wrapper">
+      <h2 class="modal__title">Добавить  в корзину</h2>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+        <legend class="modal__form-legend">Выберите размер:</legend>
+          <ul class="modal__form-list">
+            <li class="modal__form-item">
+              <input class="visually-hidden modal__form-input" id="s_size" type="radio" name="size" value="s" checked="">
+              <label class="modal__form-label" for="s_size">s</label>
+            </li>
+            <li class="modal__form-item">
+              <input class="visually-hidden modal__form-input" id="m_size" type="radio" name="size" value="m">
+              <label class="modal__form-label" for="m_size">m</label>
+            </li>
+            <li class="modal__form-item">
+              <input class="visually-hidden modal__form-input" id="l_size" type="radio" name="size" value="l">
+              <label class="modal__form-label" for="l_size">l</label>
+            </li>
+          </ul>
+          <button class="modal__form-button" type="submit">Добавить</button>
+        </form>
+    </div>
+  </section>
 
   <script src="http://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
 
