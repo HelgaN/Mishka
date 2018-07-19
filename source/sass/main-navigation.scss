@@ -76,6 +76,20 @@
   .main-navigation__item {
     border-bottom: 2px solid #ececec;
   }
+
+  @keyframes navigationShow {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .main-navigation__list {
+    animation-name: navigationShow;
+    animation-duration: 1.3s;
+  }
 }
 
 .main-navigation__link {
@@ -96,19 +110,8 @@
   display: none;
 }
 
-@keyframes navigationShow {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .main-navigation__list {
   @include list-reset;
-  animation-name: navigationShow;
-  animation-duration: 1.3s;
 }
 
 .main-navigation__link svg {

@@ -33,6 +33,14 @@
   margin-bottom: 35px;
 }
 
+.reviews__item {
+  display: none;
+  min-height: 260px;
+  &--current {
+    display: block;
+  }
+}
+
 .reviews__item-text {
   @include list-reset;
   margin-bottom: 30px;

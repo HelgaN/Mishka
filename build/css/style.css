@@ -131,7 +131,22 @@
   .main-navigation--closed .main-navigation__toggle:after {
     display: none; }
   .main-navigation__item {
-    border-bottom: 2px solid #ececec; } }
+    border-bottom: 2px solid #ececec; }
+  @-webkit-keyframes navigationShow {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  @keyframes navigationShow {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  .main-navigation__list {
+    -webkit-animation-name: navigationShow;
+            animation-name: navigationShow;
+    -webkit-animation-duration: 1.3s;
+            animation-duration: 1.3s; } }
 
 .main-navigation__link {
   position: relative;
@@ -151,26 +166,10 @@
 .main-navigation__item--desktop {
   display: none; }
 
-@-webkit-keyframes navigationShow {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes navigationShow {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
 .main-navigation__list {
   margin: 0;
   padding: 0;
-  list-style: none;
-  -webkit-animation-name: navigationShow;
-          animation-name: navigationShow;
-  -webkit-animation-duration: 1.3s;
-          animation-duration: 1.3s; }
+  list-style: none; }
 
 .main-navigation__link svg {
   position: absolute;
@@ -929,6 +928,12 @@
   list-style: none;
   margin-bottom: 35px; }
 
+.reviews__item {
+  display: none;
+  min-height: 260px; }
+  .reviews__item--current {
+    display: block; }
+
 .reviews__item-text {
   margin: 0;
   padding: 0;
@@ -1574,6 +1579,23 @@
     background-repeat: no-repeat;
     background-position: center; }
 
+.manufacture__video {
+  position: relative; }
+
+.manufacture__video-play {
+  position: absolute;
+  width: 101px;
+  height: 77px;
+  top: calc(50%);
+  left: calc(50% - 55.5px);
+  background-image: url("../img/icon-play.svg");
+  z-index: 2; }
+  .manufacture__video-play:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+  .manufacture__video-play:active {
+    opacity: 0.5; }
+
 .manufacture__process-paragraph {
   font-size: 13px;
   line-height: 24px; }
@@ -1626,6 +1648,8 @@
   .manufacture__video-picture {
     width: 100%;
     min-height: 453px; }
+  .manufacture__video-play {
+    top: calc(50% - 38.5px); }
   .manufacture__process {
     padding: 35px 40px 45px 40px; }
   .manufacture__process-title {
@@ -2131,6 +2155,7 @@ textarea::-webkit-input-placeholder {
     padding: 30px 175px 5px; } }
 
 .modal {
+  display: none;
   width: 100%;
   position: absolute;
   top: 1045px;

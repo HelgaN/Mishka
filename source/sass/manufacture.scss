@@ -21,6 +21,26 @@
   }
 }
 
+.manufacture__video {
+  position: relative;
+}
+
+.manufacture__video-play {
+  position: absolute;
+  width: 101px;
+  height: 77px;
+  top: calc(50%);
+  left: calc(50% - 55.5px);
+  background-image: url("../img/icon-play.svg");
+  z-index: 2;
+  &:hover {
+    transform: scale(1.2);
+  }
+  &:active {
+    opacity: 0.5;
+  }
+}
+
 .manufacture__process-paragraph {
   font-size: 13px;
   line-height: 24px;
@@ -75,6 +95,10 @@
   .manufacture__video-picture {
     width: 100%;
     min-height: 453px;
+  }
+
+  .manufacture__video-play {
+    top: calc(50% - 38.5px);
   }
 
   .manufacture__process {
