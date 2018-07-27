@@ -11,6 +11,7 @@
     height: 20px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
     overflow: visible;    // Animation IE
   }
 
@@ -118,9 +119,7 @@
   position: absolute;
   left: 30px;
   top: 30px;
-  path {
-    fill: #d3d2d2;
-  }
+  fill: #d3d2d2;
 }
 
 .main-navigation__link:hover {
@@ -131,11 +130,11 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
-.main-navigation__link:hover svg path {
+.main-navigation__link:hover svg {
   fill: $color-turquoise;
 }
 
-.main-navigation__link:active svg path {
+.main-navigation__link:active svg {
   fill: transparentize($color-turquoise, 0.7);
 }
 

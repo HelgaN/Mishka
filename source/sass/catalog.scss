@@ -55,9 +55,7 @@
     svg {
       transition: all linear 0.1s;
       top: 15px;
-      path {
-        fill: #29a592;
-      }
+      fill: #29a592;
     }
   }
 }
@@ -83,9 +81,7 @@
     svg {
       top: 15px;
       transition: all linear 0.1s;
-      path {
-        fill: #239f8e;
-      }
+      fill: #239f8e;
     }
   }
 }
@@ -112,9 +108,7 @@
     margin-bottom: 5px;
     svg {
       top: 15px;
-      path {
-        fill: #239f8e;
-      }
+      fill: #239f8e;
     }
   }
 }
@@ -141,15 +135,11 @@
   }
   &--decor svg {
     right: calc(50% - 123px);
-    path {
-      fill: #3bb09d;
-    }
+    fill: #3bb09d;
   }
   &--child svg {
     right: calc(50% - 133px);
-    path {
-      fill: #35a999;
-    }
+    fill: #35a999;
   }
 }
 

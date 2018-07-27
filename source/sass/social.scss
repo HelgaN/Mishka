@@ -15,15 +15,15 @@
   }
 }
 
-.social__link svg path {
+.social__link svg {
   fill: #000000;
 }
 
-.social__link:hover svg path {
+.social__link:hover svg {
   fill: $color-turquoise;
 }
 
-.social__link:active svg path {
+.social__link:active svg {
   opacity: 0.3;
 }
 

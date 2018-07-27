@@ -12,7 +12,7 @@
 .page-footer__logo {
   @include link-reset;
   display: none;
-  &[href]:hover svg path {
+  &[href]:hover svg {
     fill: $color-dark-turqoise;
   }
   &[href]:active {
