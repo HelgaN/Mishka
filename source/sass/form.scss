@@ -120,9 +120,10 @@
   }
   .form__input {
     width: 100%;
+    padding: 10px 0 14px;
     margin-bottom: 28px;
+    font-family: $font-family;
     font-size: 17px;
-    line-height: 45px;
     border: none;
     border-bottom: 2px solid #000000;
     &:focus,
@@ -176,15 +177,16 @@
   .form__input {
     width: 100%;
     margin-bottom: 30px;
+    padding: 10px 0 14px;
+    font-family: $font-family;
     font-size: 17px;
-    line-height: 45px;
     border: none;
     border-bottom: 2px solid #000000;
     &:hover,
     &:focus {
       outline: none;
       border-color: $color-turquoise;
-      & + .form__input--icon path {
+      & + .form__input--icon {
         fill: $color-turquoise;
       }
     }
@@ -192,9 +194,7 @@
       position: absolute;
       top: 35px;
       right: 0;
-      path {
-        fill: #cccccc;
-      }
+      fill: #cccccc;
     }
   }
 }
@@ -206,6 +206,7 @@
   margin-top: -7px;
   padding: 15px;
   border: 2px solid #000000;
+  font-family: $font-family;
   font-size: 17px;
   line-height: 18px;
   resize: none;
@@ -432,10 +433,11 @@ textarea::-webkit-input-placeholder {
   }
 
   .form__wrapper .form__input {
+    padding-top: 3px;
+    padding-bottom: 13px;
     margin-bottom: 42px;
     margin-right: 175px;
     font-size: 19px;
-    line-height: 40px;
   }
 
   .form__wrapper-name {

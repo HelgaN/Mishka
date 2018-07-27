@@ -18,6 +18,9 @@
   &[href]:active {
     opacity: 0.3;
   }
+  svg {
+    pointer-events: none;    // для IE
+  }
 }
 
 @media (min-width: $tablet-width) {

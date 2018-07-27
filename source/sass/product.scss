@@ -76,10 +76,10 @@
 .product__link-cart {
   margin-left: auto;
   margin-top: 20px;
-  svg path {
+  svg {
     fill: #d6d6d6;
   }
-  &:hover svg path {
+  &:hover svg {
     fill: $color-turquoise;
   }
   &:active {

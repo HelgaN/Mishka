@@ -13,9 +13,11 @@
 }
 
 .copyright__text {
+  position: relative;
   margin-bottom: 10px;
   font-size: 19px;
   font-weight: bold;
+  pointer-events: none;  //для IE
 }
 
 .copyright__link:active {

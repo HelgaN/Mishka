@@ -16,10 +16,14 @@
 
 .page-header__logo {
   display: block;
-  border-bottom: 2px solid #ececec; }
+  border-bottom: 2px solid #ececec;
+  /*
+  &[href]:active {
+    opacity: 0.3;
+  }*/ }
   .page-header__logo[href]:hover {
     opacity: 0.6; }
-  .page-header__logo[href]:active {
+  .page-header__logo[href] .page-header__logo-image:active {
     opacity: 0.3; }
 
 .page-header__logo-image {
@@ -176,7 +180,8 @@
   position: absolute;
   left: 30px;
   top: 30px;
-  fill: #d3d2d2; }
+  fill: #d3d2d2;
+  pointer-events: none; }
 
 .main-navigation__link:hover {
   color: rgba(0, 0, 0, 0.6); }
@@ -1269,7 +1274,7 @@
 .social__link:hover svg {
   fill: #63d1bb; }
 
-.social__link:active svg {
+.social__link:active {
   opacity: 0.3; }
 
 @media (min-width: 768px) {
@@ -1309,6 +1314,8 @@
     fill: #56c3b2; }
   .page-footer__logo[href]:active {
     opacity: 0.3; }
+  .page-footer__logo svg {
+    pointer-events: none; }
 
 @media (min-width: 768px) {
   .page-footer__wrapper {
@@ -1349,9 +1356,11 @@
           justify-content: space-between; }
 
 .copyright__text {
+  position: relative;
   margin-bottom: 10px;
   font-size: 19px;
-  font-weight: bold; }
+  font-weight: bold;
+  pointer-events: none; }
 
 .copyright__link:active {
   opacity: 0.3; }
@@ -1437,9 +1446,9 @@
 .product__link-cart {
   margin-left: auto;
   margin-top: 20px; }
-  .product__link-cart svg path {
+  .product__link-cart svg {
     fill: #d6d6d6; }
-  .product__link-cart:hover svg path {
+  .product__link-cart:hover svg {
     fill: #63d1bb; }
   .product__link-cart:active {
     opacity: 0.3; }
@@ -1863,9 +1872,10 @@
 
 .form__wrapper-name .form__input {
   width: 100%;
+  padding: 10px 0 14px;
   margin-bottom: 28px;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
-  line-height: 45px;
   border: none;
   border-bottom: 2px solid #000000; }
   .form__wrapper-name .form__input:focus, .form__wrapper-name .form__input:hover {
@@ -1912,21 +1922,21 @@
 .form__wrapper-contacts .form__input {
   width: 100%;
   margin-bottom: 30px;
+  padding: 10px 0 14px;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
-  line-height: 45px;
   border: none;
   border-bottom: 2px solid #000000; }
   .form__wrapper-contacts .form__input:hover, .form__wrapper-contacts .form__input:focus {
     outline: none;
     border-color: #63d1bb; }
-    .form__wrapper-contacts .form__input:hover + .form__input--icon path, .form__wrapper-contacts .form__input:focus + .form__input--icon path {
+    .form__wrapper-contacts .form__input:hover + .form__input--icon, .form__wrapper-contacts .form__input:focus + .form__input--icon {
       fill: #63d1bb; }
   .form__wrapper-contacts .form__input--icon {
     position: absolute;
     top: 35px;
-    right: 0; }
-    .form__wrapper-contacts .form__input--icon path {
-      fill: #cccccc; }
+    right: 0;
+    fill: #cccccc; }
 
 .form__textarea {
   width: 100%;
@@ -1936,6 +1946,7 @@
   margin-top: -7px;
   padding: 15px;
   border: 2px solid #000000;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   resize: none; }
@@ -2123,10 +2134,11 @@ textarea::-webkit-input-placeholder {
   .form__fieldset:nth-child(3) {
     padding-top: 45px; }
   .form__wrapper .form__input {
+    padding-top: 3px;
+    padding-bottom: 13px;
     margin-bottom: 42px;
     margin-right: 175px;
-    font-size: 19px;
-    line-height: 40px; }
+    font-size: 19px; }
   .form__wrapper-name {
     margin-bottom: 5px; }
   .form__wrapper-contacts {

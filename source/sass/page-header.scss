@@ -8,8 +8,11 @@
   border-bottom: 2px solid #ececec;
   &[href]:hover {
     opacity: 0.6;
-  }
+  }/*
   &[href]:active {
+    opacity: 0.3;
+  }*/
+  &[href] .page-header__logo-image:active {  //манипуляция для IE
     opacity: 0.3;
   }
 }
@@ -19,7 +22,6 @@
   width: 86px;
   margin: 0 auto;
   padding: 21px;
-
 }
 
 @media (min-width: $tablet-width) {
