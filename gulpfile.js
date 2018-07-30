@@ -13,6 +13,8 @@ var csso = require("gulp-csso");
 var del = require("del");
 var rename = require("gulp-rename");
 var run = require("run-sequence");
+var imagemin = require("gulp-imagemin");
+var webp = require("gulp-webp");
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
@@ -66,8 +68,14 @@ gulp.task("copy", function() {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("build", function(done) {
-  run("clean", "copy", "style", "html", done);
+gulp.task("images", function() {
+  return gulp.src("source/img/**/*.{png, jpg, svg}")
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.svgo()
+    ]))
+  .pipe(gulp.dest("source/img/"));
 });
 
 gulp.task("webp", function() {
@@ -76,4 +84,14 @@ gulp.task("webp", function() {
       quality: 90
     }))
     .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("build", function(done) {
+  run("clean",
+       "copy",
+       "style",
+       "html",
+       "images",
+       "webp",
+       done);
 });

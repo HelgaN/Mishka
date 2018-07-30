@@ -9,6 +9,7 @@ for(var i = 0; i < buttonsOrder.length; i++) {
   buttonsOrder[i].addEventListener("click", function() {
     shadow.style.display = "block";
     modal.style.display = "block";
+    scrollBy(0,500);
     document.addEventListener("keydown", function(evt) {
       if(evt.keyCode == ESC) {
         shadow.style.display = "none";
